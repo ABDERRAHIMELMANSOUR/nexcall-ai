@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "nexcall-ai-restructured/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nexcall-ai-restructured/main.py"
+    }
+  ]
+}
